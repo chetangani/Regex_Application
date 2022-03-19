@@ -6,7 +6,7 @@ import android.os.Build
 import android.provider.Settings
 import java.util.*
 
-open class BuildSolution {
+class BuildSolution {
 
     @SuppressLint("HardwareIds")
     fun getSecureID(context: Context): String {
