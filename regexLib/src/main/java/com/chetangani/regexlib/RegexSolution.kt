@@ -5,7 +5,7 @@ import java.util.ArrayList
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
-class RegexSolution {
+open class RegexSolution {
 
     private val regex: String
         get() = ("\\b\\d+(?=\\sis)\\b" + "|" +
