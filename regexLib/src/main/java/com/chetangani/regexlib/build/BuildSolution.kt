@@ -1,4 +1,4 @@
-package com.chetangani.regexlib
+package com.chetangani.regexlib.build
 
 import android.annotation.SuppressLint
 import android.content.Context

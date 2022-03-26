@@ -1,4 +1,4 @@
-package com.chetangani.regexlib
+package com.chetangani.regexlib.regex
 
 import android.text.TextUtils
 import java.util.ArrayList
