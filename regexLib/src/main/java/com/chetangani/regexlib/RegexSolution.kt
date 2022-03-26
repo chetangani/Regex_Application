@@ -15,6 +15,7 @@ open class RegexSolution {
                 "\\b(?<=is:\\s)\\d+\\b" + "|" +
                 "\\b(?<=OTP\\s)\\d+\\b" + "|" +
                 "\\b(?<=\\sOTP)\\d+\\b" + "|" +
+                "\\b(?<=\\sOTP-)\\d+\\b" + "|" +
                 "\\b\\d+(?=\\scode)\\b" + "|" +
                 "\\b(?<=code\\s)\\d+\\b" + "|" +
                 "\\b(?<=Code\\s)\\d+\\b" + "|" +
