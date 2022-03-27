@@ -29,7 +29,7 @@ class PermissionCall(private val activity: AppCompatActivity,
     }
 
     @TargetApi(Build.VERSION_CODES.M)
-    private fun checkPermissionsMAndAbove(requestedPermission: Array<String>) {
+    fun checkPermissionsMAndAbove(requestedPermission: Array<String>) {
         requestPermissionCode = OTHER_PERMISSION
         permissions = requestedPermission
         if (checkPermission()) permissionReceiver.permissionGranted(TRUE) else requestPermission()
