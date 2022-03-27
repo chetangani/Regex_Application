@@ -9,6 +9,9 @@ import androidx.appcompat.app.AlertDialog
 import com.chetangani.regexlib.R
 import com.chetangani.regexlib.constants.ConstantValues.ENABLED_NOTIFICATION_LISTENERS
 import com.chetangani.regexlib.constants.ConstantValues.FALSE
+import com.chetangani.regexlib.constants.ConstantValues.NOTIFICATION_ALERT_MSG_1
+import com.chetangani.regexlib.constants.ConstantValues.NOTIFICATION_ALERT_MSG_2
+import com.chetangani.regexlib.constants.ConstantValues.NOTIFICATION_ALERT_TITLE
 import com.chetangani.regexlib.interfaces.PermissionReceiver
 
 class NotificationListenerCall(private val context: Context,
@@ -30,10 +33,9 @@ class NotificationListenerCall(private val context: Context,
 
     fun buildNotificationServiceAlertDialog(appName: String) = context.let {
         AlertDialog.Builder(it)
-            .setTitle(R.string.notification_listener_service)
+            .setTitle(NOTIFICATION_ALERT_TITLE)
             .setCancelable(FALSE)
-            .setMessage(String.format("%s %s %s", R.string.notification_alert_msg_1, appName,
-                R.string.notification_alert_msg_2))
+            .setMessage(String.format("%s %s %s", NOTIFICATION_ALERT_MSG_1, appName, NOTIFICATION_ALERT_MSG_2))
             .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { dialogInterface, i ->
                 permissionReceiver.openNotificationPermission() })
             .setNegativeButton(R.string.no, DialogInterface.OnClickListener { dialogInterface, i ->  })
