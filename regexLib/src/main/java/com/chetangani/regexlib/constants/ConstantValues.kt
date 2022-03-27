@@ -13,4 +13,6 @@ object ConstantValues {
     /*-------------------- Application Basic Constants Keys --------------------*/
     const val FALSE = false
     const val TRUE = true
+    const val STORAGE_PERMISSION = 2
+    const val OTHER_PERMISSION = 1
 }

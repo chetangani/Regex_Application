@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rupee">\u20B9</string>
+    <string name="notification_listener_service">Notification Listener Service</string>
+    <string name="notification_alert_msg_1">For the</string>
+    <string name="notification_alert_msg_2">app to work you need to enable the Notification Listener Service. Enable it now..?</string>
+    <string name="package_text">package</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
