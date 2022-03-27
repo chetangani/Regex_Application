@@ -34,9 +34,9 @@ class NotificationListenerCall(private val context: Context,
             .setCancelable(FALSE)
             .setMessage(String.format("%s %s %s", R.string.notification_alert_msg_1, appName,
                 R.string.notification_alert_msg_2))
-            .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { _, _ ->
+            .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { dialogInterface, i ->
                 permissionReceiver.openNotificationPermission() })
-            .setNegativeButton(R.string.no, DialogInterface.OnClickListener { _, _ ->  })
+            .setNegativeButton(R.string.no, DialogInterface.OnClickListener { dialogInterface, i ->  })
             .create()
     }
 }
